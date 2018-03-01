@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MySite.master.cs" Inherits="MasterPageExample.MySite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<link href="Content/bootstrap.css" rel="stylesheet" />
+            <script src="Scripts/jquery-1.9.1.js"></script>
+            <script src="Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container">
+                <div class="jumbotron text-center">
+                    <h1>Welcome to my example
+                        <p>This is an example of a master page</p>
+                    </h1>
+                </div>
+                <nav class="nav bar">
+
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="body" runat="server" />
+           
+        </div>
+    </form>
+</body>
+</html>
